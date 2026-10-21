@@ -1,31 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Raizelle Nana</title>
+  <meta name="description" content="Projects by Raizelle Nana: StyleU, Adaptive HUD, a client website, and two PHP web apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body data-page="projects">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Raizelle Nana</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/index.js"></script>
-    
-    <nav>
-      <p>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Project</a>
-      </p>
-    </nav>
-    <h1>Projects</h1>
-    <p>
-      To be uploaded...
-      <ul>
-        <li> Java </li>
-        <li> Python </li>
-        <li> Art </li>
-      </ul>
-    </p>
-  </body>
+  <main>
+    <div class="wrap">
+      <section aria-labelledby="projects-heading">
+        <h1 class="page-title" id="projects-heading">Projects</h1>
+        <p class="lede">Take a walk through the gallery. Each frame opens the project.</p>
+
+        <div class="gallery-controls">
+          <div class="gallery-dots" data-gallery-dots></div>
+          <div class="gallery-buttons">
+            <button type="button" data-gallery-prev aria-label="Previous project">&larr;</button>
+            <button type="button" data-gallery-next aria-label="Next project">&rarr;</button>
+          </div>
+        </div>
+
+        <div class="gallery" data-gallery tabindex="0" role="region" aria-label="Project gallery">
+
+          <a class="project-card" href="https://github.com/steph1er/2026SIS_Group22.git" target="_blank">
+            <div class="art" style="--c: var(--rose)">
+              <svg viewBox="0 0 200 140" aria-hidden="true">
+                <path d="M100 32 V26 C100 12 118 12 118 24 C118 32 108 32 104 36"/>
+                <path class="fb" d="M100 34 L34 70 H166 Z"/>
+                <path class="fo" d="M74 70 L54 82 L66 98 L76 90 V130 H124 V90 L134 98 L146 82 L126 70 C118 78 82 78 74 70 Z"/>
+                <circle class="fb" cx="100" cy="102" r="8"/>
+              </svg>
+            </div>
+            <div class="body">
+              <p class="meta">Software Innovation Studio. Team of 7.</p>
+              <h3>StyleU</h3>
+              <p>A mobile app for planning outfits. Requirements, user stories and UI/UX design. I built onboarding, the outfit builder and saved outfits frontend.</p>
+              <ul class="tags"><li>React Native</li><li>Expo</li><li>TypeScript</li></ul>
+              <span class="go">Open project</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/raizellen/AdaptiveHUD.git" target="_blank">
+            <div class="art" style="--c: var(--teal)">
+              <svg viewBox="0 0 200 140" aria-hidden="true">
+                <circle class="fb" cx="100" cy="70" r="58"/>
+                <circle cx="100" cy="70" r="40"/>
+                <circle class="fo" cx="100" cy="70" r="22"/>
+                <path d="M100 70 L136 40"/>
+                <circle class="fi" cx="136" cy="40" r="4"/>
+                <path d="M100 12 V22 M100 118 V128 M42 70 H52 M148 70 H158"/>
+                <path d="M170 98 V112 M178 90 V120 M186 100 V110"/>
+              </svg>
+            </div>
+            <div class="body">
+              <p class="meta">Capstone. My part of a team designing an astronaut suit.</p>
+              <h3>Adaptive HUD</h3>
+              <p>A heads-up display for an astronaut suit in EVA missions. It shows live telemetry and obeys spoken commands. Browser simulators let me test it with no hardware.</p>
+              <ul class="tags"><li>Node.js</li><li>WebSockets</li><li>Speech recognition</li></ul>
+              <span class="go">Open project</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/alazarevic2/SDS-ULTIMATE_STEM-.git" target="_blank">
+            <div class="art" style="--c: var(--sage)">
+              <svg viewBox="0 0 200 140" aria-hidden="true">
+                <rect class="fb" x="20" y="14" width="160" height="112" rx="12"/>
+                <path d="M20 40 H180"/>
+                <circle class="fr" cx="36" cy="27" r="5"/>
+                <circle class="fo" cx="52" cy="27" r="5"/>
+                <circle class="ft" cx="68" cy="27" r="5"/>
+                <rect class="fo" x="34" y="52" width="82" height="30" rx="6"/>
+                <rect class="fr" x="126" y="52" width="40" height="30" rx="6"/>
+                <rect class="ft" x="34" y="92" width="40" height="22" rx="6"/>
+                <rect class="fs" x="84" y="92" width="82" height="22" rx="6"/>
+              </svg>
+            </div>
+            <div class="body">
+              <p class="meta">Software Development Studio. Team of 7.</p>
+              <h3>Client website</h3>
+              <p>A site built for a real client. Requirements gathering, scope definition and user stories. Designed Figma prototypes, styling, and tested six areas of the site.</p>
+              <ul class="tags"><li>Figma</li><li>Jira</li><li>Git/GitHub</li></ul>
+              <span class="go">Open project</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/raizellen/quarental.git" target="_blank">
+            <div class="art" style="--c: var(--ochre)">
+              <svg viewBox="0 0 200 140" aria-hidden="true">
+                <path class="fr" d="M24 96 H176 V82 C176 74 166 70 156 68 L136 52 C132 48 126 46 120 46 H82 C76 46 70 48 66 52 L46 68 C34 70 24 74 24 82 Z"/>
+                <path class="fb" d="M54 68 L72 54 C75 52 78 52 82 52 H96 V68 Z M104 68 V52 H120 C124 52 126 53 129 55 L144 68 Z"/>
+                <circle class="fi" cx="62" cy="98" r="14"/>
+                <circle class="fb" cx="62" cy="98" r="5"/>
+                <circle class="fi" cx="140" cy="98" r="14"/>
+                <circle class="fb" cx="140" cy="98" r="5"/>
+                <path d="M10 114 H190"/>
+              </svg>
+            </div>
+            <div class="body">
+              <p class="meta">Programming on the Internet. High Distinction.</p>
+              <h3>Quarental</h3>
+              <p>A car rental site. Search with live suggestions, filter by type and brand, and reserve a car. Bookings are saved and the car's availability updates.</p>
+              <ul class="tags"><li>PHP</li><li>JavaScript</li><li>HTML/CSS</li></ul>
+              <span class="go">Open project</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://github.com/raizellen/poti-mart.git" target="_blank">
+            <div class="art" style="--c: var(--plum)">
+              <svg viewBox="0 0 200 140" aria-hidden="true">
+                <circle class="fr" cx="90" cy="50" r="13"/>
+                <circle class="fs" cx="122" cy="44" r="13"/>
+                <circle class="fo" cx="106" cy="36" r="10"/>
+                <path d="M26 34 H46 L66 98 H150"/>
+                <path class="fb" d="M54 56 H168 L152 98 H66 Z"/>
+                <path d="M92 56 L96 98 M118 56 L116 98 M142 56 L136 98"/>
+                <circle class="fi" cx="80" cy="116" r="9"/>
+                <circle class="fi" cx="138" cy="116" r="9"/>
+              </svg>
+            </div>
+            <div class="body">
+              <p class="meta">Programming on the Internet. High Distinction.</p>
+              <h3>POTI Mart</h3>
+              <p>A database-driven grocery store with product listings, product pages and a shopping cart, all backed by a MySQL product database.</p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+              <span class="go">Open project</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Raizelle Nana.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

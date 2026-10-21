@@ -1,26 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
 
-  <body>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/index.js"></script>
-    
-    <nav>
-      <p>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Project</a>
-      </p>
-    </nav>
-    <h1>Welcome!</h1>
-    <p>
-      Hi my name is Raizelle Nana and this is my first ever website! Currently just a template...
-    </p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raizelle Nana | Software engineering student</title>
+  <meta name="description" content="Portfolio of Raizelle Nana, a fourth-year software engineering student at UTS in Sydney who builds apps and teaches kids to code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Raizelle Nana</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1 class="name-tiles">
+          <span class="visually-hidden">Raizelle Nana</span>
+          <span class="tile-row" aria-hidden="true">
+            <span class="tile" style="--c: var(--rose); --r: -4deg; --i: 0">R</span>
+            <span class="tile" style="--c: var(--ochre); --r: 3deg; --i: 1">A</span>
+            <span class="tile" style="--c: var(--sage); --r: -2deg; --i: 2">I</span>
+            <span class="tile" style="--c: var(--teal); --r: 5deg; --i: 3">Z</span>
+            <span class="tile" style="--c: var(--plum); --tc: var(--blush); --r: -3deg; --i: 4">E</span>
+            <span class="tile" style="--c: var(--rust); --tc: var(--blush); --r: 2deg; --i: 5">L</span>
+            <span class="tile" style="--c: var(--rose); --r: -5deg; --i: 6">L</span>
+            <span class="tile" style="--c: var(--ochre); --r: 4deg; --i: 7">E</span>
+          </span>
+          <span class="tile-row" aria-hidden="true">
+            <span class="tile" style="--c: var(--sage); --r: 3deg; --i: 8">N</span>
+            <span class="tile" style="--c: var(--teal); --r: -4deg; --i: 9">A</span>
+            <span class="tile" style="--c: var(--rose); --r: 2deg; --i: 10">N</span>
+            <span class="tile" style="--c: var(--ochre); --r: -3deg; --i: 11">A</span>
+          </span>
+        </h1>
+
+        <div class="hero-intro">
+          <div class="hero-copy">
+            <p class="lede">I'm a software engineering student at UTS. I build apps, break them, fix them, and then explain how they work to a seven-year-old.</p>
+
+            <div class="button-row">
+              <a class="button" href="projects.html">Walk through my projects</a>
+              <a class="button alt" href="contact.html">Say hi</a>
+            </div>
+          </div>
+
+          <div class="achievement-circles" aria-label="Academic achievements">
+            <div class="achievement-circle dean">
+              <span class="achievement-title">Dean's List</span>
+              <span>3 years</span>
+              <span>running!</span>
+            </div>
+
+            <div class="achievement-circle gpa">
+              <span class="gpa-number">6.5+</span>
+              <span>GPA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="marquee" aria-label="Languages and tools I use">
+          <div class="marquee-track">
+            <ul class="marquee-group">
+              <li>Java</li><li>Python</li><li>TypeScript</li><li>React Native</li><li>Node.js</li><li>SQL</li><li>Figma</li><li>PHP</li><li>Lua</li><li>JavaScript</li><li>C++</li><li>C#</li><li>Supabase</li><li>Git</li>
+            </ul>
+            <ul class="marquee-group" aria-hidden="true">
+              <li>Java</li><li>Python</li><li>TypeScript</li><li>React Native</li><li>Node.js</li><li>SQL</li><li>Figma</li><li>PHP</li><li>Lua</li><li>JavaScript</li><li>C++</li><li>C#</li><li>Supabase</li><li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="explore-heading">
+        <h2 id="explore-heading">Have a look around</h2>
+        <div class="doors">
+          <a class="door" href="projects.html" style="--c: var(--rose); --tilt: -1.2deg">
+            <h3>Projects</h3>
+            <p>An outfit-planning app, an astronaut's heads-up display and a car rental site. Take the gallery walk.</p>
+            <span class="go">Open the gallery</span>
+          </a>
+          <a class="door" href="about.html" style="--c: var(--ochre); --tilt: 1deg">
+            <h3>About me</h3>
+            <p>Who's behind the code, what I study, and what I get up to outside of class.</p>
+            <span class="go">Meet me</span>
+          </a>
+          <a class="door" href="story.html" style="--c: var(--sage); --tilt: -0.8deg">
+            <h3>My story</h3>
+            <p>From tutoring in high school to teaching kids to code. Follow the path so far.</p>
+            <span class="go">Follow the path</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="now-heading">
+        <div class="sticker" style="--c: var(--plum); --tc: var(--blush); max-width: 44rem; transform: rotate(0.5deg)">
+          <h2 id="now-heading">Right now</h2>
+          <p>I'm in my fourth year (expecting to graduate June 2027), building <strong>StyleU</strong> with a team of seven and an astronaut <strong>heads-up display</strong> for my capstone.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Raizelle Nana.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

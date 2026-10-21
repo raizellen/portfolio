@@ -1,35 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Links</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Raizelle Nana</title>
+  <meta name="description" content="Contact Raizelle Nana by email, LinkedIn or GitHub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Raizelle Nana</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/index.js"></script>
+  <main>
+    <div class="wrap">
+      <section aria-labelledby="contact-heading">
+        <h1 class="page-title" id="contact-heading">Say hi</h1>
+        <p class="lede">I'm happy to talk about projects, internships, or how to explain recursion to a ten-year-old.</p>
 
-    <nav>
-      <p>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Project</a>
-      </p>
-    </nav>
-    <h1>Links</h1>
-    <p>
-      Below, you can find my socials and contact information!
-    </p>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/raizelle-louise-nana-9a3524213/" target="_blank">LinkedIn</a>
-      </li>
-      <li>
-        <a href="mailto: raizelle.nana@gmail.com">Email</a>
-      </li>
-    </ul>
-  </body>
+        <ul class="contact-list">
+          <li><a href="mailto:raizelle.nana@gmail.com" style="--c: var(--rose)"><span class="label">Email</span><span class="value">raizelle.nana@gmail.com</span></a></li>
+          <li><a href="https://www.linkedin.com/in/raizellenana/" target="_blank" rel="noopener" style="--c: var(--plum); --tc: var(--blush)"><span class="label">LinkedIn</span><span class="value">linkedin.com/in/raizellenana</span></a></li>
+          <li><a href="https://github.com/raizellen" target="_blank" rel="noopener" style="--c: var(--ochre)"><span class="label">GitHub</span><span class="value">github.com/raizellen</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Raizelle Nana.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
