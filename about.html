@@ -1,26 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Raizelle Nana</title>
+  <meta name="description" content="About Raizelle Nana: what she studies, what she builds with, and what she does outside of class.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Raizelle Nana</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <body>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/index.js"></script>
+  <main>
+    <div class="wrap">
+      <section aria-labelledby="about-heading">
+        <h1 class="page-title" id="about-heading">About me</h1>
+        <div class="about-intro">
+          <p class="lede">I'm curious, organised and a bit obsessive about details. I like a good bug hunt, a tidy plan and a clear explanation.</p>
+          <p>I'm in the fourth year of my software engineering degree (honours) at UTS, and I'm looking for a place to keep growing as an engineer. Teaching kids to code has changed how I work: I explain things step by step, and I try to leave people able to solve the next problem on their own.</p>
+          <p>I speak English and am also fluent Tagalog! (maybe some elementary Korean too...)</p>
+        </div>
+      </section>
 
-    <nav>
-      <p>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact</a>
-        <a href="projects.html">Project</a>
-      </p>
-    </nav>
-    <h1>About Me</h1>
-    <p>
-      My name is Raizelle. This website is still underwork so... check back next time!
-    </p>
-  </body>
+      <section class="section" aria-labelledby="school-heading">
+        <h2 id="school-heading">School</h2>
+        <div class="cards">
+          <div class="sticker" style="--c: var(--sage); --tilt: -0.8deg">
+            <h3>UTS</h3>
+            <p><strong>Bachelor of Engineering (Honours), software major.</strong> Feb 2023 to June 2027 (expected).</p>
+            <p>On the Dean's List from 2024 to 2026, with a High Distinction average.</p>
+          </div>
+          <div class="sticker" style="--c: var(--ochre); --tilt: 0.8deg">
+            <h3>Sydney Girls High</h3>
+            <p><strong>NSW Higher School Certificate.</strong> 2017 to 2022.</p>
+            <p>My work experience was at Equinix Australia, shadowing software and critical facilities engineers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="toolkit-heading">
+        <h2 id="toolkit-heading">What I build with</h2>
+        <div class="kits">
+          <div class="sticker kit" style="--c: var(--rose)">
+            <h3>Languages</h3>
+            <ul class="chip-list">
+              <li class="chip">Java</li><li class="chip">Python</li><li class="chip">SQL</li><li class="chip">TypeScript</li><li class="chip">JavaScript</li><li class="chip">HTML/CSS</li><li class="chip">Lua</li><li class="chip">PHP</li><li class="chip">C++</li><li class="chip">C#</li>
+            </ul>
+          </div>
+          <div class="sticker kit" style="--c: var(--teal)">
+            <h3>Frameworks</h3>
+            <ul class="chip-list">
+              <li class="chip">React</li><li class="chip">React Native (Expo)</li><li class="chip">Node.js</li><li class="chip">Bootstrap</li>
+            </ul>
+          </div>
+          <div class="sticker kit" style="--c: var(--ochre)">
+            <h3>Data and APIs</h3>
+            <ul class="chip-list">
+              <li class="chip">MySQL</li><li class="chip">Supabase</li><li class="chip">SQLite</li><li class="chip">REST APIs</li>
+            </ul>
+          </div>
+          <div class="sticker kit" style="--c: var(--sage)">
+            <h3>Tools</h3>
+            <ul class="chip-list">
+              <li class="chip">Git/GitHub</li><li class="chip">Jira</li><li class="chip">Confluence</li><li class="chip">Figma</li><li class="chip">VS Code</li><li class="chip">Visual Studio</li><li class="chip">Wireshark</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="outside-heading">
+        <h2 id="outside-heading">Outside of class</h2>
+        <div class="cards">
+          <div class="sticker" style="--c: var(--rose); --tilt: -0.8deg">
+            <h3>Filipino Students Association</h3>
+            <p>I was on the public relations team in 2023 and 2024. I promoted events, got to know members and helped run society events.</p>
+          </div>
+          <div class="sticker" style="--c: var(--teal); --tilt: 0.8deg">
+            <h3>K-pop Society</h3>
+            <p>In 2023 I was on the media subcommittee, joining the dance classes, filming them and editing promotional reels.</p>
+          </div>
+          <div class="sticker" style="--c: var(--plum); --tc: var(--blush); --tilt: -0.5deg">
+            <h3>Volunteering</h3>
+            <p>I volunteered for Jeans for Genes with the Children's Medical Research Institute and for Daffodil Day with the Cancer Council. I also hold a Working With Children Check.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Raizelle Nana.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
