@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio for Raizelle Nana. Plain HTML, CSS and a little JavaScript, so there is no build step.
+Personal portfolio. Plain HTML, CSS and a little JavaScript.
 
 ## Pages
 
@@ -28,12 +28,3 @@ Open `index.html` in a browser, or serve the folder:
     python3 -m http.server 8000
 
 Then visit http://localhost:8000.
-
-## Deploy with GitHub Pages
-
-In the repo, go to Settings, then Pages, and choose "Deploy from a branch" with the `main` branch and the `/ (root)` folder.
-
-## To do
-
-- Replace the placeholder links on each project card in `projects.html` with the real repo or live site.
-- Add a photo or illustration of yourself on the About page if you want one.
